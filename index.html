@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 5: Responsive Images</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    
+    <header>
+        <h1>Lab 5</h1>
+    </header>
+
+    <main>
+        <div class="flex">
+            <img class="svg" src="images/logo-1.svg" alt="logo">
+
+            <section class="about1">
+                <h2>About The Farm</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit adipisci earum eveniet vitae. Minima accusantium ratione neque et. Laudantium voluptatibus fugit, minus quo explicabo sunt quos blanditiis assumenda non fuga. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia est quod adipisci mollitia blanditiis, ipsam dolorum nulla sapiente ex id tempora ad tenetur ut error quia voluptatibus eius asperiores libero. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi officiis hic libero cum unde pariatur explicabo repudiandae laboriosam autem repellendus sed vitae suscipit voluptatem odit necessitatibus, eligendi ea dignissimos nam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit adipisci earum eveniet vitae. Minima accusantium ratione neque et. Laudantium voluptatibus fugit, minus quo explicabo sunt quos blanditiis assumenda non fuga. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia est quod adipisci mollitia blanditiis, ipsam dolorum nulla sapiente ex id tempora ad tenetur ut error quia voluptatibus eius asperiores libero. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi officiis hic libero cum unde pariatur explicabo repudiandae laboriosam autem repellendus sed vitae suscipit voluptatem odit necessitatibus, eligendi ea dignissimos nam.</p>
+            </section>
+        </div>
+
+        <img class="farm" src="images/farm.jpg" alt="farm">
+
+        <div class="flex">
+            <section class="about2">
+                <h2>About Our Animals</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit adipisci earum eveniet vitae. Minima accusantium ratione neque et. Laudantium voluptatibus fugit, minus quo explicabo sunt quos blanditiis assumenda non fuga. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia est quod adipisci mollitia blanditiis, ipsam dolorum nulla sapiente ex id tempora ad tenetur ut error quia voluptatibus eius asperiores libero. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi officiis hic libero cum unde pariatur explicabo repudiandae laboriosam autem repellendus sed vitae suscipit voluptatem odit necessitatibus, eligendi ea dignissimos nam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit adipisci earum eveniet vitae. Minima accusantium ratione neque et.</p>
+            </section>
+
+            <div class="layout">
+                <picture>
+                    <source media="(max-width: 699px)" srcset="images/portrait.jpg">
+                    <source media="(min-width: 700px)" srcset="images/landscape.jpg">
+                    <img class="cows" src="images/portrait.jpg" alt="cows">
+                </picture>
+            </div>
+        </div>
+
+        <div class="flex">
+            <section class="products">
+                <h2>Our Products</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit adipisci earum eveniet vitae. Minima accusantium ratione neque et. Laudantium voluptatibus fugit, minus quo explicabo sunt quos blanditiis assumenda non fuga. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia est quod adipisci mollitia blanditiis, ipsam dolorum nulla sapiente ex id tempora ad tenetur ut error quia voluptatibus eius asperiores libero. </p>
+            </section>
+
+            <div class="resolution">
+                <img srcset="images.small.jpg 640w,
+                            images/medium.jpg 1920w,
+                            images/large.jpg 2400w"
+                    sizes="(max-width: 650px) 640px,
+                            (max-width: 2000px) 1920px,
+                            1400px"
+                    src="images/large.jpg"
+                    alt="products">
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="dis column">
+            <p class="disclaimer">"This fictitious website was created as an academic exercise for the Diablo Valley College course, ARTDM-173:Web Design II. In no way should this content be considered or used as a source of factual public information."</p>
+
+            <p><a class="home" href="/artdm174">Click Here To Go Back to Jump Page!</a></p>
+        </div>
+    </footer>
+</body>
+</html>
